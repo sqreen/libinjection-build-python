@@ -1,3 +1,6 @@
 [submodule "multibuild"]
 	path = multibuild
 	url = https://github.com/matthew-brett/multibuild.git
+[submodule "libinjection"]
+	path = libinjection
+	url = https://github.com/client9/libinjection
