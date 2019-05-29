@@ -18,4 +18,5 @@ matrix:
         - ./build_mac_os_x_wheels.sh
 
 install:
+  - if [ "${TRAVIS_OS_NAME:-}" == "osx" ]; then brew install swig; fi
   - if [ "${TRAVIS_OS_NAME:-}" == "osx" ]; then ./install_osx.sh; fi
