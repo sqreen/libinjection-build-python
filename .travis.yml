@@ -22,6 +22,6 @@ matrix:
         - ./upload_artifacts_mac_os_x.sh
 
 install:
-  - ./prepare_setup.sh
+  - ./prepare_setup_py.sh
   - if [ "${TRAVIS_OS_NAME:-}" == "osx" ]; then brew install swig; fi
   - if [ "${TRAVIS_OS_NAME:-}" == "osx" ]; then ./install_osx.sh; fi
