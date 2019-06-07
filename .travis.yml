@@ -23,5 +23,5 @@ matrix:
 
 install:
   - ./prepare_setup_py.sh
-  - if [ "${TRAVIS_OS_NAME:-}" == "osx" ]; then brew install swig; fi
+  - if [ "${TRAVIS_OS_NAME:-}" == "osx" ]; then brew tap sqreen/speakeasy && brew install swig@3.0.12; fi
   - if [ "${TRAVIS_OS_NAME:-}" == "osx" ]; then ./install_osx.sh; fi
